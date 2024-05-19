@@ -1,0 +1,55 @@
+// @import '_partials';
+// @import '_utils2';
+//color will be applied for 2nd file
+
+@use "_partials" as style1;
+@use "_utils2" as style2;
+
+
+.Box{
+    background-color: $color-blue;
+    color: white;
+
+    h1{
+        padding: style1.$large;
+        font-size: $large;
+
+        a{
+            text-decoration: underline;
+            color: style2.$color-white;
+            background-color: nth($background-color , 2);
+        }
+    }
+}
+
+//  make a template and use it in inheritance\
+
+%Contents{
+    background-color: red;
+    color: white;
+    padding: 1rem;
+}
+.p2{
+    @extend %Contents
+}
+
+
+// make a class and use it by inheriting 
+
+.Content{
+    background-color: rgb(131, 85, 85);
+    color: white;
+    padding: 1rem;
+    border: 1px solid black
+}
+.p1{
+    @extend .Content
+}
+
+@mixin customFunc($color){
+    background-color: $color-blue;
+    padding : 1rem 2rem;
+}
+.p1{
+    @include customFunc(white)
+}

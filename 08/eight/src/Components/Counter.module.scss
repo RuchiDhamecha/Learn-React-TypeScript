@@ -1,0 +1,14 @@
+.Counter{
+    padding: 1rem;
+    border: 1px solid #ccc;
+    display: flex;
+    gap: 1rem;
+
+    span{
+        background-color: #ccc;
+        border-radius: 4px;
+        padding: 0.5rem;
+        border: 1px solid #000000;
+        cursor: pointer;
+    }
+}

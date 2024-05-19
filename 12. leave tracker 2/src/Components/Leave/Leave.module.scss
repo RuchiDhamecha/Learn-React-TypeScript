@@ -1,0 +1,17 @@
+.Leave{
+    border: thin solid #ccc;
+    padding: 1rem;
+    margin : 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    
+    .LeaveText{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}

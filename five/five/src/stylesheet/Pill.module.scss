@@ -1,0 +1,17 @@
+$green :rgb(97, 245, 97);
+$red: rgb(251, 117, 117);
+
+@mixin PillContainer($color){
+    background-color: $color;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+
+}
+.PillOnline{
+    @include PillContainer($green);
+  
+}
+.PillOffline{
+    @include PillContainer($red);
+    ;
+}

@@ -1,0 +1,19 @@
+npm create vite@latest 
+
+
+npm create vite@latest  one -- --template react-ts
+npm init vite@latest three -- --template react-ts
+
+node mdules -dependenceies
+
+
+components - class / function\
+f-> class
+app.tsc
+const App=()=>{
+    return (
+        div>p this is para
+    );
+}
+components capital unless its native html 
+

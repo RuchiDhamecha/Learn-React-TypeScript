@@ -1,0 +1,19 @@
+
+.Box{
+    display: flex;
+    justify-content: center;
+
+    .Counter{
+        padding : 2rem;
+        border: 1px solid black;
+        margin : 1rem;
+        cursor: pointer;
+
+        .Circle{
+            padding : 1rem;
+            border-radius: 50%;
+            background-color: rgb(255, 233, 255);
+            color: red;
+        }
+    }
+}

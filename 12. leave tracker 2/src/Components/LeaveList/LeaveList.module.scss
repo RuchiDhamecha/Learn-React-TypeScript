@@ -1,0 +1,27 @@
+.LeaveList{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    max-height: calc(100vh - 6rem);
+    min-height: auto;
+    border: thin solid;
+    
+    h4{
+        text-align: center;
+    }
+
+}
+.LeaveList::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  .LeaveList::-webkit-scrollbar-track {
+    background: rgb(206, 201, 192);
+  }
+  
+  .LeaveList::-webkit-scrollbar-thumb {
+    background-color: rgb(168, 12, 192);
+    border-radius: 20px;
+    // border: 1px solid rgb(255, 0, 230);
+  }

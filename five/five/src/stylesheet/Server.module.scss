@@ -1,0 +1,41 @@
+@import '_partial';
+
+.Server {
+    border: 1px solid black;
+    padding: 1rem 1rem;
+    display: inline-block;
+    margin: 2rem;
+    border-radius: 4px;
+    background-color: #fbeeee;
+
+    .PillContainer {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        margin: 1rem 0;
+
+        .Dot {
+            padding: 0.5rem;
+            border-radius: 50%;
+        } 
+        .Pillonline , .Dotonline{
+            @extend %Pill;
+            background-color: $green;
+        }
+        
+        .Pilloffline , .Dotoffline {
+            @extend %Pill ;
+            background-color: $blue;
+        }
+        
+        
+    }
+}
+
+.Button{
+    border: 1px solid black;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fecbcb;
+}
