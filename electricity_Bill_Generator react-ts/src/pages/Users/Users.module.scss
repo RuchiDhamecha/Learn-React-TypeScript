@@ -1,0 +1,13 @@
+ .Users{
+    display: flex;
+    h1{
+        color: white;
+       
+    }
+    .Header{
+        display: flex;
+        padding :1rem;
+        justify-content: space-around;
+        gap: 2rem;
+    }
+ }
